@@ -80,3 +80,6 @@ $ cd /home/workspace/catkin_ws/
 $ source devel/setup.bash
 $ roslaunch ball_chaser ball_chaser.launch
 ``` 
+
+## Output 
+![Ball chaser robot crop](https://user-images.githubusercontent.com/98288035/151255255-4e5bd042-6a2f-45d8-968b-de8257ec8ba0.gif)
