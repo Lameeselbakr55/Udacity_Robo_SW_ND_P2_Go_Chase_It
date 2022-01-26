@@ -31,43 +31,52 @@ Design and build a mobile robot inside Gazebo, house it in the World, Then write
     │   ├── package.xml                # package info                  
     └──                              
 
-**Create the my_robot Package**
+## Create the my_robot Package
 
-Create and initialize a catkin_ws Feel free to skip if you already have a catkin_ws.
+**Create and initialize a catkin_ws Feel free to skip if you already have a catkin_ws.**
 
+```
 $ mkdir -p /home/workspace/catkin_ws/src
-
 $ cd /home/workspace/catkin_ws/src
-
 $ catkin_init_workspace
+```
 
-Clone or Download This Project Under the /home/workspace/catkin_ws/src
+**Clone or Download This Project Under the /home/workspace/catkin_ws/src**
 
+```
 $ cd /home/workspace/catkin_ws/src
+$ git clone https://github.com/Lameeselbakr55/Udacity_Robo_SW_ND_P2_Go_Chase_It.git myrobot
+```  
 
-$ git clone  myrobot
-
-Build Package
+## Build Package
 
 Now that you’ve included specific instructions for your process_image.cpp code in CMakeLists.txt, compile it with:
 
+``` 
 $ cd /home/workspace/catkin_ws/
 $ catkin_make
-Test process_image
+``` 
+
+## Test process_image
+
 To test if the code you just wrote is working as expected, first launch the robot inside your world and then run both the drive_bot and process_image nodes.
 
 1- Launch the robot inside your world
 
-This can be done by launching the world.launch file:
+**This can be done by launching the world.launch file:*
 
+``` 
 $ cd /home/workspace/catkin_ws/
 $ source devel/setup.bash
 $ roslaunch my_robot world.launch
+``` 
 
-2- Run drive_bot and process_image (new terminal)
+**2- Run drive_bot and process_image (new terminal)**
 
 This can be done by executing ball_chaser.launch:
 
+``` 
 $ cd /home/workspace/catkin_ws/
 $ source devel/setup.bash
 $ roslaunch ball_chaser ball_chaser.launch
+``` 
